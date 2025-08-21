@@ -6,18 +6,27 @@ import HeroSection from './components/HeroSection'
 import AboutSection from './components/AboutSection/AboutSection'
 import "./index.css"
 import Footer from './components/Footer/Footer'
-import ProcessSection from './components/ProcessSection/ProcessSection'
+import ServicesSection from './components/ServicesSection/ServicesSection'
+import ContactSection from './components/ContactSection/ContactSection'
 
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="scrollable-div overflow-y-auto">
+    <div id="home" className="scroll-smooth">
       <NavBar />
-      <div className="flex flex-col space-y-10">
-        <HeroSection />
-        <AboutSection />
+      <div className="flex flex-col">
+        <HeroSection a="hero"/>
+        <div id="about">
+          <AboutSection />
+        </div>
+        <div id="services">  
+          <ServicesSection />
+        </div>
+        <div id="contact"> 
+          <ContactSection />
+        </div>
         <Footer />
       </div>
     </div>

@@ -1,7 +1,7 @@
-import { FaChevronDown } from "react-icons/fa";
+import { FaChevronDown, FaChevronRight } from "react-icons/fa";
 const HeroSection = () => {
     return (
-        <div className="relative h-[90vh] overflow-hidden shadow-2xl">
+        <div className="relative h-[80vh] overflow-hidden shadow-2xl">
             <video
                 src="/placeholder.mp4"
                 autoPlay
@@ -23,8 +23,7 @@ const HeroSection = () => {
                         </div>
 
                         {/* Connector Line 1 */}
-                        <div className="w-8 h-1 bg-white absolute top-1/2 left-1/3 transform -translate-y-1/2" />
-
+                        <FaChevronRight />
                         {/* Step 2 */}
                         <div className="flex flex-col items-center w-1/3 text-center">
                             <div className="text-2xl font-semibold mb-2">Organize Logistics</div>
@@ -33,9 +32,7 @@ const HeroSection = () => {
                             </p>
                         </div>
 
-                        {/* Connector Line 2 */}
-                        <div className="w-8 h-1 bg-white absolute top-1/2 left-2/3 transform -translate-y-1/2" />
-
+                        <FaChevronRight />
                         {/* Step 3 */}
                         <div className="flex flex-col items-center w-1/3 text-center">
                             <div className="text-2xl font-semibold mb-2">Download Your Footage</div>
@@ -50,12 +47,12 @@ const HeroSection = () => {
             </div>
 
             {/* See More Button */}
-            <div className="absolute bottom-0 w-full flex justify-center z-20 cursor-pointer">
+            <a href="#about" className="absolute bottom-0 w-full flex justify-center z-20 cursor-pointer">
                 <div className="flex flex-col w-24 h-14 pb-2 bg-dark-gray/50 backdrop-blur-sm rounded-t-full items-center justify-end text-white text-sm shadow-md">
                     <div>See More</div>
                     <FaChevronDown />
                 </div>
-            </div>
+            </a>
         </div>
     );
 };

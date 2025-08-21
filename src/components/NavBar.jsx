@@ -7,30 +7,30 @@ const NavBar = () => {
             />
 
             {/* Nav Content */}
-            <div className="relative z-10 flex flex-row items-center justify-between w-full text-light-gray">
-                <div className="flex flex-row space-x-24 bg-dark-gray/50 backdrop-blur-sm pr-8 px-4 rounded-md">
-                    <div className="flex flex-row items-center space-x-5  h-8">
+            <div className="relative z-10 flex flex-row items-center justify-between w-full text-light-gray bg-dark-gray/50 backdrop-blur-md rounded-md ">
+                <div className="flex flex-row space-x-24 pr-8 px-4 ">
+                    <a href="#home" className="flex flex-row items-center space-x-5  h-8">
                         <div>
                             <img src="/drone.png" className="w-15 h-7"/>
                         </div>
-                        <div>DroneCore</div>
-                    </div>
-                    <div className="flex flex-row items-center space-x-10 h-8">
-                        <div className="cursor-pointer">
+                        <div className="font-normal text-gray-100 hover:text-gray-100">DroneCore</div>
+                    </a>
+                    <div className="flex flex-row items-center space-x-4 h-8 transition-all duration-300 ">
+                        <a href="#about" className="font-normal text-gray-100 hover:text-gray-100 cursor-pointer hover:bg-dark-gray/80 rounded-md px-2  transition-all duration-300">
                             About
-                        </div>
-                        <div className="cursor-pointer">
+                        </a>
+                        <a href="#services" className=" font-normal text-gray-100 hover:text-gray-100 cursor-pointer hover:bg-dark-gray/80 rounded-md px-2 transition-all duration-300">
                             Testimonials
-                        </div>
-                        <div className="cursor-pointer">
+                        </a>
+                        <a href="#contact" className=" font-normal text-gray-100 hover:text-gray-100 cursor-pointer hover:bg-dark-gray/80 rounded-md px-2 transition-all duration-300">
                             Footage
-                        </div>
-                        <div className="cursor-pointer">
+                        </a>
+                        <a href="#contact" className="font-normal text-gray-100 hover:text-gray-100 cursor-pointer hover:bg-dark-gray/80 rounded-md px-2 transition-all duration-300">
                             Contact
-                        </div>
+                        </a>
                     </div>
                 </div>
-                <div className="flex flex-row bg-dark-gray/50 backdrop-blur-sm rounded-md px-4 h-8 items-center">
+                <div className="flex flex-row rounded-md px-4 h-8 items-center">
                     <div>
                         Register
                     </div>
