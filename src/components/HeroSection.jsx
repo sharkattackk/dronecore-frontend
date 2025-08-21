@@ -13,7 +13,7 @@ const HeroSection = () => {
             />
 
             {/* Overlay Content */}
-            <div className="relative z-10 flex items-center justify-center space-y-8 h-full flex-col px-10 md:px-24">
+            <div className="relative z-10 flex items-center justify-center space-y-8 h-full flex-col px-10 md:px-24 bg-dark-gray/70">
                 {/* Steps Container */}
                 <div className="flex flex-row justify-between items-center w-full relative">
                     
