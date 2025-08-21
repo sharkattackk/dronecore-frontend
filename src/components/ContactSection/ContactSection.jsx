@@ -33,7 +33,7 @@ const ContactSection = () => {
                     {/* Submit Button */}
                     <button
                         type="submit"
-                        className="bg-blue-600 hover:bg-blue-700 transition text-white py-3 rounded-md font-medium"
+                        className="bg-accent-blue hover:bg-blue-700 transition text-white py-3 rounded-md font-medium"
                     >
                         Send Message
                     </button>
