@@ -3,6 +3,15 @@
 @tailwind utilities;
 
 
+.scrollable-div::-webkit-scrollbar {
+  width: 8px;
+}
+.scrollable-div::-webkit-scrollbar {
+  background: #222;
+  border-radius: 4px;
+}
+
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -10,7 +19,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #151419;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
