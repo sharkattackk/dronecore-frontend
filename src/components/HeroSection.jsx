@@ -68,7 +68,7 @@ const HeroSection = () => {
 
             {/* See More Button */}
             <a href="#about" className="absolute bottom-0 w-full flex justify-center z-20 cursor-pointer">
-                <div className="flex flex-col w-24 h-14 pb-2 bg-dark-gray/80 backdrop-blur-sm rounded-t-full items-center justify-end text-white text-sm shadow-md">
+                <div className="flex flex-col w-24 h-14 bg-dark-gray/80 backdrop-blur-sm rounded-t-full items-center justify-end text-white text-sm shadow-md">
                     <div>See More</div>
                     <FaChevronDown />
                 </div>

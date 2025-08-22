@@ -13,36 +13,38 @@ const NavBar = () => {
     }, []);
 
     return (
-        <div className={`fixed z-50 w-full h-16 flex flex-row items-center px-4 lg:space-x-10 ${isScrolled ? "bg-dark-gray" : "bg-transparent"}`}>
+        <div className={`fixed z-50 w-full h-16 flex flex-row items-center px-4 lg:space-x-10 ${isScrolled ? "bg-dark-gray" : "bg-transparent"} transition-all duration-300`}>
 
             {/* Nav Content */}
-            <div className={`hidden relative z-10 lg:flex flex-row items-center justify-between w-full transition-all duration-300 rounded-md bg-dark-gray/80 backdrop-blur-md}`}>
-                <div className="flex flex-row space-x-24 pr-8 px-4 ">
-                    <a href="#home" className="flex flex-row items-center space-x-5 h-8">
+            <div className={`hidden relative z-10 lg:flex flex-row items-center justify-between w-full`}>
+                <a href="#home" className="flex flex-row items-start w-1/3">
+                    <div className="flex flex-row items-center space-x-4 bg-dark-gray/80 rounded-md px-4 h-8">
                         <div>
                             <img src="/drone.png" className="w-15 h-7" />
                         </div>
-                        <div className={`font-normal hover:text-accent-blue text-white`}>
+                        <div className={`font-normal hover:text-accent-blue text-gray-100`}>
                             DroneCore
                         </div>
-                    </a>
-                    <div className="flex flex-row items-center space-x-4 h-8 transition-all duration-300">
-                        {['About', 'Testimonials', 'Footage', 'Contact'].map((item) => (
-                            <a
-                                key={item}
-                                href={`#${item.toLowerCase()}`}
-                                className={`font-normal px-2 rounded-md cursor-pointer transition-all duration-300 
-                                    ${isScrolled ? 'text-dark-gray hover:text-accent-blue' : 'text-gray-100 hover:text-gray-100 hover:bg-accent-blue'}
-                                `}
-                            >
+                    </div>
+                </a>
+                <div className="flex flex-col w-1/3 ">
+                    <div className="w-auto flex flex-row items-center justify-between px-8 h-8 bg-dark-gray/80 rounded-md">
+                        {['About', 'Services', 'Gallery', 'Contact'].map((item) => (
+                            <a key={item} href={`#${item.toLowerCase()}`} className="text-gray-100 hover:text-gray-100 hover:bg-med-gray rounded-md p-1 transition-all duration-300 font-normal">
                                 {item}
                             </a>
                         ))}
                     </div>
                 </div>
-                <div className="flex flex-row rounded-md px-4 h-8 items-center">
-                    <div className={`${isScrolled ? 'text-dark-gray' : 'text-gray-100'}`}>
-                        Register
+                
+                <div className="flex flex-row rounded-md px-4 w-1/3 justify-end items-center">
+                    <div className="flex flex-row px-4 h-8 bg-dark-gray/80 items-center rounded-md space-x-4">
+                        <div className="">
+                            Login
+                        </div>
+                        <div className="">
+                            Register
+                        </div>
                     </div>
                 </div>
             </div>
