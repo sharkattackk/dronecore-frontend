@@ -13,19 +13,16 @@ const NavBar = () => {
     }, []);
 
     return (
-        <div className={`fixed z-50 w-full h-16 flex flex-row items-center px-4 space-x-10 ${isScrolled ? "bg-dark-gray" : "bg-transparent"}`}>
-            {/* Optional blurred overlay */}
-            <div className="absolute inset-0 pointer-events-none" />
+        <div className={`fixed z-50 w-full h-16 flex flex-row items-center px-4 lg:space-x-10 ${isScrolled ? "bg-dark-gray" : "bg-transparent"}`}>
 
             {/* Nav Content */}
-            <div className={`relative z-10 flex flex-row items-center justify-between w-full transition-all duration-300 rounded-md bg-dark-gray/80 backdrop-blur-md}
-            `}>
+            <div className={`hidden relative z-10 lg:flex flex-row items-center justify-between w-full transition-all duration-300 rounded-md bg-dark-gray/80 backdrop-blur-md}`}>
                 <div className="flex flex-row space-x-24 pr-8 px-4 ">
                     <a href="#home" className="flex flex-row items-center space-x-5 h-8">
                         <div>
                             <img src="/drone.png" className="w-15 h-7" />
                         </div>
-                        <div className={`font-normal hover:text-accent-blue`}>
+                        <div className={`font-normal hover:text-accent-blue text-white`}>
                             DroneCore
                         </div>
                     </a>
@@ -47,6 +44,17 @@ const NavBar = () => {
                     <div className={`${isScrolled ? 'text-dark-gray' : 'text-gray-100'}`}>
                         Register
                     </div>
+                </div>
+            </div>
+            <div className="flex flex-row justify-between lg:hidden w-full bg-dark-gray/80 rounded-md px-4 py-1 items-center">
+                <div className="w-full flex flex-col items-start">
+                    <div>Yes</div>
+                </div>
+                <div className="w-full flex flex-col items-center">
+                    <img src="/drone.png" className="w-15 h-7" />
+                </div>
+                <div className="w-full flex flex-col items-end">
+                    <div>Yes</div>
                 </div>
             </div>
         </div>
