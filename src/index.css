@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 
+body {
+  font-family: 'Public Sans', sans-serif;
+}
 .scrollable-div::-webkit-scrollbar {
   width: 8px;
 }
