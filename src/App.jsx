@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import NavBar from './components/NavBar'
 import HeroSection from './components/HeroSection'
-import AboutSection from './components/AboutSection/AboutSection'
 import "./index.css"
 import Footer from './components/Footer/Footer'
 import ServicesSection from './components/ServicesSection/ServicesSection'
 import ContactSection from './components/ContactSection/ContactSection'
+import GallerySection from './components/GallerySection/GallerySection'
 
 
 function App() {
@@ -15,12 +15,12 @@ function App() {
     <div id="home" className="scroll-smooth">
       <NavBar />
       <div className="flex flex-col">
-        <HeroSection a="hero"/>
-        <div id="about">
-          <AboutSection />
-        </div>
-        <div id="services">  
+        <HeroSection />
+        <div id="services">
           <ServicesSection />
+        </div>
+        <div id="gallery">  
+          <GallerySection />
         </div>
         <div id="contact"> 
           <ContactSection />

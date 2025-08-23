@@ -1,6 +1,6 @@
 const Footer = () => {
     return(
-        <div className="lg:h-[30vh] bg-med-gray flex flex-col lg:flex-row mt-10">
+        <div className="lg:h-[30vh] bg-med-gray flex flex-col lg:flex-row pt-10 h-[30vh]">
             <div className="h-full">
                 <img src="/drone.png" className="h-full"/>
                 
