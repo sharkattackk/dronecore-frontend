@@ -19,7 +19,7 @@ const NavBar = () => {
             {/* Nav Content */}
             <div className={`hidden relative z-10 lg:flex flex-row items-center justify-between w-full`}>
                 <a href="#home" className="flex flex-row items-start w-1/3">
-                    <div className="flex flex-row items-center space-x-4 bg-dark-gray/80 rounded-md px-4 h-8 hover:scale-[103%] transition-all duration-200">
+                    <div className="flex flex-row items-center space-x-2 bg-dark-gray/80 rounded-md px-4 h-8 hover:scale-[103%] transition-all duration-200">
                         <div>
                             <img src="/drone.png" className="w-15 h-7" />
                         </div>
@@ -40,8 +40,8 @@ const NavBar = () => {
                 
                 <div className="flex flex-row rounded-md px-4 w-1/3 justify-end items-center">
                     <div className="flex flex-row px-4 h-8 bg-dark-gray/80 hover:scale-[103%] transition-all duration-200 cursor-pointer items-center rounded-md space-x-4 ">
-                        <div className=" flex flex-row items-center space-x-2 ">
-                            <div>Get Content</div> <FaArrowUpRightFromSquare className="text-xs"/>
+                        <div className=" flex flex-row items-center space-x-4">
+                            <div>Get Started</div> <FaArrowUpRightFromSquare className=" text-xs"/>
                         </div>
                     </div>
                 </div>
