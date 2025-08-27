@@ -1,6 +1,6 @@
 const ContactSection = () => {
     return (
-        <div className="flex flex-col items-center pt-20 px-6 h-[70vh]">
+        <div className="flex flex-col items-center pt-20 px-6 h-[70vh] bg-dark-gray">
             <div className="w-full max-w-xl rounded-lg shadow-lg">
                 <h2 className="text-2xl font-semibold text-white mb-6 text-center">Contact Us</h2>
                 <form className="flex flex-col space-y-6">

@@ -2,7 +2,7 @@ import InfoCard from "./InfoCard"
 
 const ServicesSection = () => {
     return(
-        <div className="flex flex-col space-y-4 px-4 lg:px-24 h-[40vh] pt-16 shadow-2xl">
+        <div className="flex flex-col space-y-4 px-4 lg:px-24 h-[40vh] pt-16 shadow-2xl bg-dark-gray">
             <div className="text-2xl w-full text-center">Services</div>
             <div className="flex flex-col lg:flex-row w-full space-y-4 lg:space-x-10 lg:space-y-0 justify-between">
                 {/* <InfoCard title={"400 Projects"} img={"/stock1.jpg"} subtitle={"We have completed 400 different projects around Toronto"}/>

@@ -14,8 +14,8 @@ const HeroSection = () => {
 
             {/* Overlay Content */}
             <div className="relative z-10 flex items-center mt-20 lg:justify-center lg:mt-0 space-y-8 h-full flex-col px-10 md:px-24 ">
-                <div className="text-6xl font-bold bg-dark-gray/80 rounded-md p-4">
-                    Dronecore
+                <div className="text-4xl font-light bg-dark-gray/80 rounded-md p-4">
+                    Drone Services Delivered Simply.
                 </div>
                 {/* <div className="flex flex-col lg:flex-row justify-between items-center w-full relative">
                     
