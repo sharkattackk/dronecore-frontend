@@ -1,77 +1,77 @@
-import { FaChevronDown, FaChevronRight } from "react-icons/fa";
+import { FaStar, FaChevronDown } from "react-icons/fa";
 
 const HeroSection = () => {
-    return (
-        <div className="relative h-[100vh] overflow-hidden shadow-2xl">
-            <video
-                src="/placeholder.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="absolute top-0 left-0 w-full h-full object-cover"
-            />
+  return (
+    <section className="relative h-screen w-full overflow-hidden text-white">
+      {/* Background Image */}
+      {/* Day Image */}
+        <img
+        src="/toronto-day.jpg"
+        alt="Toronto Harbour Day"
+        className="absolute inset-0 w-full h-full object-cover blur-[5px] dark:hidden"
+        />
 
-            {/* Overlay Content */}
-            <div className="relative z-10 flex items-center mt-20 lg:justify-center lg:mt-0 space-y-8 h-full flex-col px-10 md:px-24 ">
-                <div className="text-4xl font-light bg-dark-gray/80 rounded-md p-4">
-                    Drone Services Delivered Simply.
-                </div>
-                {/* <div className="flex flex-col lg:flex-row justify-between items-center w-full relative">
-                    
-                    <div className="flex flex-col items-center text-center bg-dark-gray/80 backdrop-blur-md rounded-md p-6 w-1/5 min-w-[180px]">
-                        <div className="text-sm lg:text-2xl font-semibold mb-2">Submit Request</div>
-                        <p className="text-xs lg:text-sm text-gray-300">
-                            Make your account and request drone footage anytime you need it.
-                        </p>
-                    </div>
+        {/* Evening Image */}
+        <img
+        src="/toronto.jpg"
+        alt="Toronto Harbour Night"
+        className="absolute inset-0 w-full h-full object-cover blur-[3px] hidden dark:block"
+        />
 
-                    <div className="flex flex-col lg:flex-row items-center justify-center w-[300px]">
-                        <div className="w-1 lg:w-full h-[20px] lg:h-1 bg-dark-gray/80 backdrop-blur-md rounded-full" />
-                        <div className="mx-2 bg-dark-gray/80 backdrop-blur-md rounded-full p-2 text-white">
-                            <FaChevronRight className="rotate-90 lg:rotate-0"/>
-                        </div>
-                        <div className="w-1 lg:w-full h-[20px] lg:h-1 bg-dark-gray/80 backdrop-blur-md rounded-full" />
-                    </div>
 
-                    <div className="flex flex-col items-center text-center bg-dark-gray/80 backdrop-blur-md rounded-md p-6 w-1/5 min-w-[180px]">
-                        <div className="text-sm lg:text-2xl font-semibold mb-2">Organize Logistics</div>
-                        <p className="text-xs lg:text-sm text-gray-300">
-                            We'll coordinate what we need to get you exactly what you want.
-                        </p>
-                    </div>
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-neutral-gray/30 backdrop-blur-sm dark:hidden" />
 
-                    <div className="flex flex-col lg:flex-row items-center justify-center w-[300px]">
-                        <div className="w-1 lg:w-full h-[20px] lg:h-1 bg-dark-gray/80 backdrop-blur-md rounded-full" />
-                        <div className="mx-2 bg-dark-gray/80 backdrop-blur-md rounded-full p-2 text-white">
-                            <FaChevronRight className="rotate-90 lg:rotate-0"/>
-                        </div>
-                        <div className="w-1 lg:w-full h-[20px] lg:h-1 bg-dark-gray/80 backdrop-blur-md rounded-full" />
-                    </div>
-
-                    <div className="flex flex-col items-center text-center bg-dark-gray/80 backdrop-blur-md rounded-md p-6 w-1/5 min-w-[180px]">
-                        <div className="text-sm lg:text-2xl font-semibold mb-2">Download Footage</div>
-                        <p className="text-xs lg:text-sm text-gray-300">
-                            Once complete, your footage will appear in your files section.
-                        </p>
-                    </div>
-                </div> */}
-
-                {/* Subtext */}
-                {/* <div className="bg-dark-gray/80 text-sm backdrop-blur-sm px-6 py-2 rounded-md text-white shadow">
-                    We handle everything from request to delivery.
-                </div> */}
-            </div>
-
-            {/* See More Button */}
-            <a href="#services" className="absolute bottom-0 w-full flex justify-center z-20 cursor-pointer">
-                <div className="flex flex-col w-24 h-14 bg-dark-gray/80 backdrop-blur-sm rounded-t-full items-center justify-end text-white text-sm shadow-md hover:scale-[103%] transition-all duration-200">
-                    <div>See More</div>
-                    <FaChevronDown />
-                </div>
-            </a>
+      {/* Content */}
+      <div className="relative z-10 flex mt-24 md:mt-0 flex-col justify-end pb-48 h-full px-6 md:px-20 max-w-7xl mx-auto">
+        
+        {/* Google Rating Badge */}
+        <div className="flex items-center space-x-3 bg-black/20 dark:bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full w-fit mb-6 shadow-lg">
+          <div className="flex text-yellow-400">
+            <FaStar />
+            <FaStar />
+            <FaStar />
+            <FaStar />
+            <FaStar />
+          </div>
+          <div className="text-sm md:text-base">
+            <span className="font-semibold">4.9/5</span> on Google • 120+ Reviews
+          </div>
         </div>
-    );
+
+        {/* Heading */}
+        <h1 className="text-5xl md:text-7xl font-semibold leading-tight max-w-3xl text-dark-gray dark:text-white">
+          Harbour Heat
+        </h1>
+
+        {/* Subheading */}
+        <p className="mt-6 text-lg md:text-xl text-gray-800 dark:text-gray-200 max-w-2xl">
+          Premium sauna and cold plunges with a breathtaking waterfront view in Toronto.
+        </p>
+
+        {/* Buttons */}
+        <div className="mt-10 flex flex-col sm:flex-row gap-4">
+          <button className="bg-white text-black px-8 py-3 rounded-full font-medium hover:scale-105 transition-all duration-200 shadow-xl">
+            Book Now
+          </button>
+          <button className="border hidden md:block border-white px-8 py-3 rounded-full font-medium hover:bg-white hover:text-black transition-all duration-200">
+            Learn More
+          </button>
+        </div>
+      </div>
+
+      {/* Scroll Down Indicator */}
+      <div className="flex flex-row w-full items-center justify-center">
+      <a
+        href="#services"
+        className="absolute bottom-8 flex flex-col items-center text-sm text-gray-200 animate-bounce"
+      >
+        <span>Scroll</span>
+        <FaChevronDown className="mt-1" />
+      </a>
+      </div>
+    </section>
+  );
 };
 
 export default HeroSection;
